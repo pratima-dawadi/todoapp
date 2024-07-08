@@ -9,14 +9,14 @@ import {
 
 const router = express();
 
-router.get("/", getTodos);
+router.get("/todo", getTodos);
 
-router.get("/:id", getTodosById);
+router.get("/todo/:id", getTodosById);
 
-router.post("/", postTodos);
+router.post("/todo", postTodos);
 
-router.put("/:id", putTodos);
+router.put("/todo/:id", putTodos);
 
-router.delete("/:id", deleteTodos);
+router.delete("/todo/:id", deleteTodos);
 
 export default router;
